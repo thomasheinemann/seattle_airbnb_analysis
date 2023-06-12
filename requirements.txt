@@ -1,0 +1,9 @@
+numpy
+pandas
+requests
+jinja2
+matplotlib
+geopandas
+scipy
+gender_guesser
+

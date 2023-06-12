@@ -20,10 +20,10 @@ survey data
 - https://www.kaggle.com/datasets/airbnb/seattle
 
 geographical data:
-- https://data-seattlecitygis.opendata.arcgis.com/datasets/city-clerk-neighborhoods/explore?location=47.614536%2C-122.336950%2C12.40
+- https://data-seattlecitygis.opendata.arcgis.com/datasets/city-clerk-neighborhoods/explore?location=47.614536%2C-122.336950%2C12.4A
 
 ### Install/run instructions:
-0. Install the packages denoted in requirements_working_configuration.txt preferably in a virtual environment as exemplarily shown for the windows command prompt:
+0. Install python >= 3.11 and the packages denoted in requirements_working_configuration.txt preferably in a virtual environment as exemplarily shown for the windows command prompt:
 ```
       projectfolder:> python -m venv venv
       projectfolder:> cd venv\Scripts
@@ -34,14 +34,16 @@ geographical data:
       Within your project folder "projectfolder" use the "python" command as long as the virtual environment is activated
       (if not working with/on the project, the virtual environment should be deactivated by executing projectfolder\venv\Scripts\deactivate.bat).
 
-1. Run the following commands in the project's root directory to set up your database and model.
+      Important note: If you are using requirements.txt (no package versions provided) instead of requirements_working_configuration.txt, make shure to install ipykernel before (python -m pip install ipykernel). The order seems imnportant.
+
+1. Download the Airbnb survey data from the link provided above (subscription required) and extract the three csv files into the "data" folder
 
 ### Files in the repository
 ```
 data           # contains files covering ETL pipeline
-|- calendar.csv            # data about each Airbnb listing's price and availability
-|- reviews.csv             # data about reviews from Airbnb customers covering a time interval between 2009 and 2016
-|- listings.csv            # data about Airbnb listings in seattle covering id, host name, list price, ...
+|- calendar.csv            # data about each Airbnb listing's price and availability                                 (has to be downloaded manually)
+|- reviews.csv             # data about reviews from Airbnb customers covering a time interval between 2009 and 2016 (has to be downloaded manually)
+|- listings.csv            # data about Airbnb listings in seattle covering id, host name, list price, ...           (has to be downloaded manually)
 graphics
 |- airbnb_seattle_gender_ratio.png   # graph visualizing female reviewer gender ratio depending on the host's gender and review score
 |- airbnb_seattle_influence_of_host_response_on_rating.png  # diagrams visualizing influence of host response on review scores rating with histograms
