@@ -14,7 +14,7 @@ In total, this analysis deals with three business questions being discussed sequ
 This investigation is part of a crisp-dm approach dealing with Seattle Airbnb data and is inspired by Josh Bernard who is a mentor in the prior-mentioned udacity program.
 Given a rough idea about the data, I started asking business questions that were iteratively changed or specified during the steps above. Finally, an answer to each business question is developed forming the base of a blog post.
 
-### Data source: 
+### Data sources: 
 
 survey data
 - https://www.kaggle.com/datasets/airbnb/seattle
@@ -23,23 +23,28 @@ geographical data:
 - https://data-seattlecitygis.opendata.arcgis.com/datasets/city-clerk-neighborhoods/explore?location=47.614536%2C-122.336950%2C12.4A
 
 ### Install/run instructions:
-0. Install python >= 3.11 and the packages denoted in requirements_working_configuration.txt preferably in a virtual environment as exemplarily shown for the windows command prompt:
+1. Install python >= 3.11 and the packages denoted in requirements_working_configuration.txt preferably in a virtual environment as exemplarily shown for the windows command prompt:
 ```
-      projectfolder:> python -m venv venv
-      projectfolder:> cd venv\Scripts
-      projectfolder\venv\Scripts> .\activate.bat
-      projectfolder\venv\Scripts> cd ..\..
+      projectfolder:> python -m venv .venv
+      projectfolder:> cd .venv\Scripts
+      projectfolder\.venv\Scripts> .\activate.bat
+      projectfolder\.venv\Scripts> cd ..\..
       projectfolder:> python -m pip install -r requirements_working_configuration.txt
 ```
       Within your project folder "projectfolder" use the "python" command as long as the virtual environment is activated
-      (if not working with/on the project, the virtual environment should be deactivated by executing projectfolder\venv\Scripts\deactivate.bat).
+      (if not working with/on the project, the virtual environment should be deactivated by executing projectfolder\.venv\Scripts\deactivate.bat).
 
       Important note: If you are using requirements.txt (no package versions provided) instead of requirements_working_configuration.txt, make shure to install ipykernel before (python -m pip install ipykernel). The order seems imnportant.
 
-1. Download the Airbnb survey data from the link provided above (subscription required) and extract the three csv files into the "data" folder
+2. Download the Airbnb survey data from the link provided above (subscription required) and extract the three csv files into the "data" folder. THe geographical data is downloaded automatically within the main jupyter file "analysis.ipynb".
+
+3. In the programming IDE select .venv\Scripts\python.exe as Kernel.
+
+4. Run all code blocks in "analysis.ipynb"
 
 ### Files in the repository
 ```
+analysis.ipynb # main jupyther file
 data           # contains files covering ETL pipeline
 |- calendar.csv            # data about each Airbnb listing's price and availability                                 (has to be downloaded manually)
 |- reviews.csv             # data about reviews from Airbnb customers covering a time interval between 2009 and 2016 (has to be downloaded manually)
