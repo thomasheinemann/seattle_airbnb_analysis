@@ -4,7 +4,7 @@
 ### Summary
 
 This project covers an analysis of data from 3818 Airbnb accommodations in Seattle and was triggered by the udacity "data-scientist-nanodegree" program (see https://www.udacity.com/).
-Referring to these, accomodation data on actual price and availability over one year (starting from January 2016) as well as data on client reviews covering 3191 of our accommodations (between June 2009 and Jan. 2016) are taken into account. 
+Referring to these, accomodation data on actual price and availability over a one year period (starting from January 2016) as well as data on client reviews covering 3191 of our accommodations (between June 2009 and Jan. 2016) are taken into account. 
 In total, this analysis deals with three business questions being discussed sequentially.
 
 
@@ -12,7 +12,7 @@ In total, this analysis deals with three business questions being discussed sequ
 ### Motivation
 
 This investigation is part of a crisp-dm approach dealing with Seattle Airbnb data and is inspired by Josh Bernard who is a mentor in the prior-mentioned udacity program.
-Given a rough idea about the data, I started asking business questions that were iteratively changed or specified during the steps above. Finally, an answer to each business question is developed forming the base of a blog post.
+Given a rough idea about the data, I started asking business questions that were iteratively changed or specified. Finally, an answer to each business question is developed forming the base of a blog post.
 
 ### Data sources: 
 
@@ -36,7 +36,7 @@ geographical data:
 
       Important note: If you are using requirements.txt (no package versions provided) instead of requirements_working_configuration.txt, make shure to install ipykernel before (python -m pip install ipykernel). The order seems imnportant.
 
-2. Download the Airbnb survey data from the link provided above (subscription required) and extract the three csv files into the "data" folder. THe geographical data is downloaded automatically within the main jupyter file "analysis.ipynb".
+2. Download the Airbnb survey data from the link provided above (subscription required) and extract the three csv files into the "data" folder. The geographical data is downloaded automatically within the main jupyter file "analysis.ipynb".
 
 3. In the programming IDE select .venv\Scripts\python.exe as Kernel.
 
@@ -44,11 +44,16 @@ geographical data:
 
 ### Files in the repository
 ```
-analysis.ipynb # main jupyther file
+analysis.ipynb # main jupyter file
 data           # contains files covering ETL pipeline
 |- calendar.csv            # data about each Airbnb listing's price and availability                                 (has to be downloaded manually)
 |- reviews.csv             # data about reviews from Airbnb customers covering a time interval between 2009 and 2016 (has to be downloaded manually)
 |- listings.csv            # data about Airbnb listings in seattle covering id, host name, list price, ...           (has to be downloaded manually)
+|- City_Clerk_Neighborhoods.cpg # neighbourhood shape data (will be downloaded automatically)
+|- City_Clerk_Neighborhoods.dbf # neighbourhood shape data (will be downloaded automatically)
+|- City_Clerk_Neighborhoods.prj # neighbourhood shape data (will be downloaded automatically)
+|- City_Clerk_Neighborhoods.shp # neighbourhood shape data (will be downloaded automatically)
+|- City_Clerk_Neighborhoods.shx # neighbourhood shape data (will be downloaded automatically)
 graphics
 |- airbnb_seattle_gender_ratio.png   # graph visualizing female reviewer gender ratio depending on the host's gender and review score
 |- airbnb_seattle_influence_of_host_response_on_rating.png  # diagrams visualizing influence of host response on review scores rating with histograms
