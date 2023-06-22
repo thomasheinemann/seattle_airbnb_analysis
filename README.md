@@ -7,12 +7,13 @@ This project covers an analysis of data from 3818 Airbnb accommodations in Seatt
 Referring to these, accomodation data on actual price and availability over a one year period (starting from January 2016) as well as data on client reviews covering 3191 of our accommodations (between June 2009 and Jan. 2016) are taken into account. 
 In total, this analysis deals with three business questions being discussed sequentially.
 
+The foundings are summarized and can be found here: https://medium.com/@omf2/what-can-we-learn-from-seattles-airbnbs-fd09bfde4ab7
 
 
 ### Motivation
 
 This investigation is part of a crisp-dm approach dealing with Seattle Airbnb data and is inspired by Josh Bernard who is a mentor in the prior-mentioned udacity program.
-Given a rough idea about the data, I started asking business questions that were iteratively changed or specified. Finally, an answer to each business question is developed forming the base of a blog post.
+Given a rough idea about the data, I started asking business questions that were iteratively changed or specified. Finally, an answer to each business question is developed forming the base of the blog post. 
 
 ### Data sources: 
 
